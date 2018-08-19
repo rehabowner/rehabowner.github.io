@@ -1,172 +1,192 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Recovery residency, sober housing management.">
-        <meta name="author" content="RehabOwner.Com">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Recovery residency, sober housing management.">
+    <meta name="author" content="RehabOwner.Com">
 
-        <!--<meta property="twitter:card" content="summary_large_image">-->
-        <meta property="twitter:site" content="@rehabowner">
-        <!--<meta name="twitter:image" content="//images/uikit-meta.png">-->
-        <meta property="og:locale" content="en_GB">
-        <meta property="og:type" content="website">
-        <meta property="og:title" content="RehabOwner">
-        <meta property="og:description" content="RehabOwner, recovery residency management">
-        <meta property="og:url" content="https://rehabowner.com/">
-        <meta property="og:site_name" content="PerunCS">
-        <!--<meta property="og:image" content="https://getuikit.com/images/PerunCS_logo.png">-->
+    <meta property="twitter:site" content="@rehabowner">
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="RehabOwner">
+    <meta property="og:description" content="RehabOwner.Com, recovery residency and rehab management">
+    <meta property="og:url" content="https://rehabowner.com/">
+    <meta property="og:site_name" content="RehabOwner.Com">
+    <meta property="og:image" content="images/logo.png">
 
 
-        <!-- Favicons -->
-        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-        <link rel="manifest" href="images/manifest.json">
-        <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
-        <link rel="shortcut icon" href="images/favicon.ico">
-        <meta name="msapplication-config" content="images/browserconfig.xml">
-        <meta name="theme-color" content="#ffffff">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/manifest.json">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <meta name="msapplication-config" content="images/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
 
 
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/css/uikit.min.css"/>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/js/uikit.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/js/uikit-icons.min.js"></script>
-        <title>Recovery residence</title>
-        <style>
-            .tm-bullet {color: red;}
-            .tm-message {color: #f7f6b4;}
-        </style>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/css/uikit.min.css"/>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/js/uikit.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/js/uikit-icons.min.js"></script>
+    <title>Recovery residence</title>
 
-        <script>
-            (function (i, s, o, g, r, a, m) {
-                i['GoogleAnalyticsObject'] = r;
-                i[r] = i[r] || function () {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date();
-                a = s.createElement(o),
-                        m = s.getElementsByTagName(o)[0];
-                a.async = 1;
-                a.src = g;
-                m.parentNode.insertBefore(a, m)
-            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    <style>
+			.wrap::before {
+				position: absolute;
+				height: 100vh;
+				width: 100vw;
+				content: '';
+				z-index: 1;
+				background-color: rgba(0,0,0,0.5);
+			}
+			.lead {
+				font-size: 1.175em;
+				font-weight: 300;
+			}
+			.uk-logo img {
+				height: 30px;
+			}
 
-            ga('create', 'UA-102560520-2', 'auto');
-            ga('send', 'pageview');
+    </style>
 
-        </script>
 
-    </head>
-    <body>
-        <div class="uk-section uk-section-primary uk-background-cover uk-background-image@m uk-text-center uk-padding" style="background-image: url(images/hero-image2.jpeg);">
-            <img class="uk-heading-hero" style="height:1em;" src="./images/logo.svg">
-            <p class="uk-heading-hero">Rehab Owner</p>
-            <h3 class="uk-text uk-text-primary">Unclutter Your Recovery Residency Business!</h3>
-        </div>
+    <!--<style>-->
+    <!--.tm-bullet {color: red;}-->
+    <!--.tm-message {color: #f7f6b4;}-->
+    <!--</style>-->
 
-        <div class="uk-section uk-section-secondary uk-text-left">
+    <!--<script>-->
+    <!--(function (i, s, o, g, r, a, m) {-->
+    <!--i['GoogleAnalyticsObject'] = r;-->
+    <!--i[r] = i[r] || function () {-->
+    <!--(i[r].q = i[r].q || []).push(arguments)-->
+    <!--}, i[r].l = 1 * new Date();-->
+    <!--a = s.createElement(o),-->
+    <!--m = s.getElementsByTagName(o)[0];-->
+    <!--a.async = 1;-->
+    <!--a.src = g;-->
+    <!--m.parentNode.insertBefore(a, m)-->
+    <!--})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');-->
 
-            <div class="uk-container uk-container-small">
-                <p class="uk-text-warning">
-                    We are launching soon. Join our FREE e-mail list and download beautiful Top 10 poster.
-                </p>
+    <!--ga('create', 'UA-102560520-2', 'auto');-->
+    <!--ga('send', 'pageview');-->
 
-                <form class="uk-grid-small" uk-grid>
+    <!--</script>-->
 
-                    <div class="uk-width-2-5@s">
-                        <input class="uk-input" type="text" placeholder="Your First, Last names">
-                    </div>
+</head>
+<body>
+<div class="uk-section uk-section-primary uk-background-cover uk-background-image@m uk-text-center uk-padding"
+     style="background-image: url(images/hero-image2.jpeg);">
+    <img class="uk-heading-hero" style="height:1em;" src="./images/logo.svg">
+    <p class="uk-heading-hero">Rehab Owner</p>
+    <h3 class="uk-text uk-text-primary">Unclutter Your Recovery Residency Business!</h3>
+</div>
 
-                    <div class="uk-width-2-5@s">
-                        <input class="uk-input" type="text" placeholder="Your Email">
-                    </div>
+<div class="uk-section uk-section-secondary uk-text-left">
 
-                    <div class="uk-width-1-5@s">
-                        <button type="submit" class="uk-button uk-button-danger">Sign up</button>
-                    </div>
+    <div class="uk-container uk-container-small">
+        <p class="uk-text-warning">
+            We are launching soon. Join our FREE e-mail list and download beautiful Top 10 poster.
+        </p>
 
-                </form>
+        <form class="uk-grid-small" uk-grid>
+
+            <div class="uk-width-2-5@s">
+                <input class="uk-input" type="text" placeholder="Your First, Last names">
             </div>
-        </div>
 
-
-        <div class="uk-section uk-text-left">
-            <div class="uk-container uk-container-large">
-                <dl class="uk-description-list">
-
-                    <dt><b><span class="tm-bullet">&#x25cf;</span> Why do I need RehabOwner.Com</b></dt>
-                    <dd>
-                        RehabOwner.Com helps Recovery Residency owners to seamlessly manage their business, 
-                        according to established best practices, and in compliance with 
-                        federal and state requirements.
-                    </dd>
-
-                    <dt><b><span class="tm-bullet">&#x25cf;</span> What does RehabOwner.Com offer</b></dt>
-                    <dd>
-                        TODO: List of features.
-                    </dd>
-
-
-                    <dt><b><span class="tm-bullet">&#x25cf;</span> How much does RehabOwner.Com cost</b></dt>
-                    <dd>Pricing is based on a monthly fee, and depends on the feature you require and number of patients.</dd>
-
-                    <table class="uk-table uk-table-divider">
-                        <thead>
-                            <tr>
-                                <th class="uk-table-shrink">NARR Level</th>
-                                <th class="uk-table-shrink">1-5</th>
-                                <th class="uk-table-shrink">6-10</th>
-                                <th class="uk-table-shrink">11-50</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Level 1</td>
-                                <td>$20</td>
-                                <td>$35</td>
-                                <td>$50</td>
-                            </tr>
-                            <tr>
-                                <td>Level 2</td>
-                                <td>$50</td>
-                                <td>$70</td>
-                                <td>$100</td>
-                            </tr>
-                            <tr>
-                                <td>Level 3</td>
-                                <td>$100</td>
-                                <td>$200</td>
-                                <td>$300</td>
-                            </tr>
-                            <tr>
-                                <td>Level 4</td>
-                                <td>$150</td>
-                                <td>$250</td>
-                                <td>$350</td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <dt><b><span class="tm-bullet">&#x25cf;</span> How compliant is RehabOwner.Com</b></dt>
-                    <dd>We implemented RehabOwner following the following government agencies 
-                        requirements and recommendations: TODO
-                    </dd>
-
-                    <dt><b><span class="tm-bullet">&#x25cf;</span> How secure is RehabOwner.Com</b></dt>
-                    <dd>We take security and data protection very seriously.</dd>
-
-                </dl>
+            <div class="uk-width-2-5@s">
+                <input class="uk-input" type="text" placeholder="Your Email">
             </div>
-        </div>
 
-        <div class="uk-section uk-section-secondary uk-padding uk-text uk-text-center">
-            <!--<hr>-->
-            <p>
-                <span>Product of 
+            <div class="uk-width-1-5@s">
+                <button type="submit" class="uk-button uk-button-danger">Sign up</button>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+
+<div class="uk-section uk-text-left">
+    <div class="uk-container uk-container-large">
+        <dl class="uk-description-list">
+
+            <dt><b><span class="tm-bullet">&#x25cf;</span> Why do I need RehabOwner.Com</b></dt>
+            <dd>
+                RehabOwner.Com helps Recovery Residency owners to seamlessly manage their business,
+                according to established best practices, and in compliance with
+                federal and state requirements.
+            </dd>
+
+            <dt><b><span class="tm-bullet">&#x25cf;</span> What does RehabOwner.Com offer</b></dt>
+            <dd>
+                TODO: List of features.
+            </dd>
+
+
+            <dt><b><span class="tm-bullet">&#x25cf;</span> How much does RehabOwner.Com cost</b></dt>
+            <dd>Pricing is based on a monthly fee, and depends on the feature you require and number of patients.</dd>
+
+            <table class="uk-table uk-table-divider">
+                <thead>
+                <tr>
+                    <th class="uk-table-shrink">NARR Level</th>
+                    <th class="uk-table-shrink">1-5</th>
+                    <th class="uk-table-shrink">6-10</th>
+                    <th class="uk-table-shrink">11-50</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Level 1</td>
+                    <td>$20</td>
+                    <td>$35</td>
+                    <td>$50</td>
+                </tr>
+                <tr>
+                    <td>Level 2</td>
+                    <td>$50</td>
+                    <td>$70</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>Level 3</td>
+                    <td>$100</td>
+                    <td>$200</td>
+                    <td>$300</td>
+                </tr>
+                <tr>
+                    <td>Level 4</td>
+                    <td>$150</td>
+                    <td>$250</td>
+                    <td>$350</td>
+                </tr>
+                </tbody>
+            </table>
+
+            <dt><b><span class="tm-bullet">&#x25cf;</span> How compliant is RehabOwner.Com</b></dt>
+            <dd>We implemented RehabOwner following the following government agencies
+                requirements and recommendations: TODO
+            </dd>
+
+            <dt><b><span class="tm-bullet">&#x25cf;</span> How secure is RehabOwner.Com</b></dt>
+            <dd>We take security and data protection very seriously.</dd>
+
+        </dl>
+    </div>
+</div>
+
+<div class="uk-section uk-section-secondary uk-padding uk-text uk-text-center">
+    <!--<hr>-->
+    <p>
+                <span>Product of
                     <a class="uk-link-muted" href="http://peruncs.com">PerunCS.Com</a> &copy; 2018
                 </span>
-            </p> 
-        </div>
-    </body>
+    </p>
+</div>
+</body>
 </html>
 
